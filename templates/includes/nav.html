@@ -1,0 +1,16 @@
+<nav class="nav">
+  <div class="nav-container">
+    <a href="{{ config.base_url }}">{{ config.title }}</a>
+    <ul>
+      {% for link in config.extra.nav.links %}
+      <li>
+        <a href="{{config.base_url}}{{ link.url }}">{{ link.name }}</a>
+      </li>
+      {% endfor %} {% if config.extra.nav.show_feed %}
+      <li>
+        <a href="{{ config.base_url }}/rss.xml">Feed</a>
+      </li>
+      {% endif %}
+    </ul>
+  </div>
+</nav>

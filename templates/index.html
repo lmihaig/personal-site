@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<header>
+    <div class="header-container">
+        <h1 class="heading">licu</h1>
+        <h1>dev</h1>
+    </div>
+    {{ section.content | safe }}
+    <h1 class="heading left">hello there</h1>
+    <h2>interested in software engineering and security</h2>
+    <div class="navigation-prompt">
+        <h3>you're probably looking for one of these 👉</h3>
+        <nav>
+            <ul>
+                <li><a class="link-page" href="/blog/">Blog</a>where I ramble about random things</li>
+                <li><a class="link-page" href="/resume/">Resume</a>where I ramble about things that get me a job</li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+{% endblock content %}

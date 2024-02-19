@@ -1,0 +1,41 @@
+base_url = "https://licu.dev"
+title = "licu.dev"
+author = "Mihai-George Licu"
+
+default_language = "en"
+compile_sass = true
+minify_html = true
+generate_feed = true
+feed_filename = "rss.xml"
+build_search_index = true
+external_links_target_blank = true
+
+
+taxonomies = [{ name = "tags", feed = true }]
+
+[markdown]
+highlight_code = true
+highlight_theme = "css"
+highlight_themes_css = [
+    { theme = "solarized-dark", filename = "syntax-theme-dark.css" },
+    # { theme = "solarized-light", filename = "syntax-theme-light.css" },
+]
+smart_punctuation = true
+
+[extra]
+primary_color = "COLOR_CODE"
+date_format = "%d %B %Y"
+
+[extra.nav]
+links = [
+    # { url = "/demo", name = "Demo" },
+    { url = "/resume", name = "Resume" },
+    { url = "/blog", name = "Blog" },
+]
+show_feed = true
+
+[extra.footer]
+# "© Title, YEAR" in the footer
+show_copyright = true
+# "Powered by Zola and Duckquill" in footer
+show_powered_by = false

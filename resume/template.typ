@@ -1,7 +1,7 @@
-#import "@preview/fontawesome:0.1.0": *
+#import "@preview/fontawesome:0.5.0": *
 
 // #let accent = rgb("#0000ff")
-#FA_SET.update("Brands")
+// #FA_SET.update("Brands")
 
 #let resume(body) = {
   set list(indent: 0.3em)
@@ -89,7 +89,7 @@
     let start = strpdate(item.startDate)
     let end = strpdate(item.endDate)
     block[
-      *#item.institution* #h(1fr) Bucharest, Romania \
+      *#item.institution* #h(1fr) #item.location \
       #item.studyType #item.area #h(1fr) #start #sym.dash.en #end \
     ]
   }

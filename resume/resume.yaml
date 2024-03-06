@@ -20,12 +20,20 @@ basics:
     url: "https://github.com/lmihaig"
 
 education:
+  - institution: "ETH Zurich"
+    url: "https://ethz.ch/en.html"
+    studyType: "Master of Science in"
+    area: "Cybersecurity"
+    startDate: "2024-09-16"
+    endDate: "2026-06-01"
+    location: "Zurich, Switzerland"
   - institution: "University of Bucharest"
     url: "https://fmi.unibuc.ro/"
     studyType: "Bachelor of"
     area: "Computer Science and Engineering"
     startDate: "2020-09-01"
     endDate: "2024-07-01"
+    location: "Bucharest, Romania"
 
 work:
   - name: "CERN"
@@ -38,6 +46,17 @@ work:
     highlights:
       - "Orchestrated incident response initiatives for a significant hacking incident, leveraging OSINT methods and reverse engineering to dissect attack strategies and gauge breach magnitude."
       - "Engineered a Python tool for extensive CERN site scans, integrating SSO via Kerberos authentication. Systematically inventoried web technologies, pinpointed vulnerabilities, and initiated security enhancements."
+
+  - name: "Deutsche Bank"
+    location: "Bucharest, Romania"
+    description: "Multinational investment bank"
+    website: "https://www.deutsche-bank.de/"
+    position: "Software Engineer Intern"
+    startDate: "2023-03-01"
+    endDate: "2023-08-01"
+    highlights:
+      - "Developed a platform for organizing and tracking employee trainings, using backend Java Spring Boot with JWT authentication and frontend React."
+      - "Implemented CI/CD to automate the build, test, and deployment process on the cloud and created Python microservices for notifications."
 
   - name: "ETH Zurich"
     location: "Zurich, Switzerland"
@@ -83,6 +102,9 @@ hackathons:
     summary: "Developed a tool for analyzing and predicting public companies' ESG scores based on their public reports and statements."
 
 ctfs:
+  - name: "ETH Bjorn CTF 2024"
+    result: "Won first place out of 71"
+
   - name: "Unbreakable Romania 2021 Winter"
     result: "Won first place out of 45"
 
@@ -113,3 +135,4 @@ skills:
       - "IDA Pro"
       - "Wireshark"
       - "Burp Suite"
+

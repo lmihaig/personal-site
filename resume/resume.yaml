@@ -44,7 +44,7 @@ work:
     startDate: "2023-06-29"
     endDate: "2023-09-02"
     highlights:
-      - "Orchestrated incident response initiatives for a significant hacking incident, leveraging OSINT methods and reverse engineering to dissect attack strategies and gauge breach magnitude."
+      - "Orchestrated incident response initiatives for a significant hacking incident, leveraging OSINT methods and reverse engineering to dissect attack strategies and gauge breach magnitude resulting in faster identification and mitigation of vulnerabilities."
       - "Engineered a Python tool for extensive CERN site scans, integrating SSO via Kerberos authentication. Systematically inventoried web technologies, pinpointed vulnerabilities, and initiated security enhancements."
 
   - name: "Deutsche Bank"
@@ -55,8 +55,8 @@ work:
     startDate: "2023-03-01"
     endDate: "2023-08-01"
     highlights:
-      - "Developed a platform for organizing and tracking employee trainings, using backend Java Spring Boot with JWT authentication and frontend React."
-      - "Implemented CI/CD to automate the build, test, and deployment process on the cloud and created Python microservices for notifications."
+      - "Developed a scalable platform for organizing and tracking employee trainings, streamlining training management for over 1500 employees. Utilized backend Java Spring Boot with JWT authentication for robust security and frontend React for an intuitive user interface, demonstrating full-stack development capabilities."
+      - "Implemented CI/CD to automate the build, test, and deployment process on the cloud. Developed Python microservices for real-time notifications, enhancing user engagement and platform usability."
 
   - name: "ETH Zurich"
     location: "Zurich, Switzerland"
@@ -74,15 +74,20 @@ projects:
     description: "Rust"
     highlights:
       - "Developed a Rust library for cryptography, utilizing the num crate for efficient mathematical operations."
-      - "Implemented the Blum Blum Shub pseudorandom number generator and the Solitaire cipher from the Cryptonomicon novel and integrated with rigorous unit tests for reliability."
+      - "Implemented the Blum Blum Shub pseudorandom number generator and the Solitaire cipher from the Cryptonomicon novel. Integrated comprehensive unit tests, emphasizing code quality, modularity, and maintainability."
     url: "https://github.com/lmihaig/cryptorusticon"
-
-  - name: "Yuri"
-    description: "Rust, Python"
+  - name: "Sound Synth"
+    description: "C++, SDL"
     highlights:
-      - "Created a C2 framework that enables operators to establish and manage reliable communication channels with listening posts, facilitating effective command and control."
-      - "Engineered a secure implant process for establishing reliable communication channels, ensuring optimized control over integrated systems."
-    url: "https://github.com/lmihaig/Yuri"
+      - "Developed a real-time sound synthesizer leveraging digital signal processing (DSP) techniques for audio generation. Implemented a variety of oscillators (e.g., sine, square, sawtooth) and ADSR envelopes to create diverse instrument sounds."
+      - "Employed modern C++ principles, including object-oriented design, for modular and extensible signal processing chains.  Utilized SDL for cross-platform capabilities."
+    url: "https://github.com/lmihaig/sound-synth"
+  # - name: "Yuri"
+  #   description: "Rust, Python"
+  #   highlights:
+  #     - "Created a C2 framework that enables operators to establish and manage reliable communication channels with listening posts, facilitating effective command and control."
+  #     - "Engineered a secure implant process for establishing reliable communication channels, ensuring optimized control over integrated systems."
+  #   url: "https://github.com/lmihaig/Yuri"
 
 # here I don't follow the json schema
 hackathons:
@@ -135,4 +140,3 @@ skills:
       - "IDA Pro"
       - "Wireshark"
       - "Burp Suite"
-

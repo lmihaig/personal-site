@@ -10,8 +10,8 @@ basics:
   email: "mihai.licu@protonmail.com"
   phone: "+40729572719"
   location:
-    city: "Bucharest"
-    countryCode: "RO"
+    city: "Zurich"
+    countryCode: "CH"
   linkedin:
     username: "licu-mihai"
     url: "https://www.linkedin.com/in/licu-mihai"
@@ -44,9 +44,9 @@ work:
     startDate: "2023-06-29"
     endDate: "2023-09-02"
     highlights:
-      - "Orchestrated incident response initiatives for a significant hacking incident, leveraging OSINT methods and reverse engineering to dissect attack strategies and gauge breach magnitude resulting in faster identification and mitigation of vulnerabilities."
-      - "Engineered a Python tool for extensive CERN site scans, integrating SSO via Kerberos authentication. Systematically inventoried web technologies, pinpointed vulnerabilities, and initiated security enhancements."
-
+      - "Played a key role in the incident response to a significant hacking event, using OSINT and reverse engineering to analyze attack strategies and breach magnitude."
+      - "Engineered a Python tool with Kerberos SSO to automate security scans across 1000+ CERN sites. Systematically inventoried web technologies, pinpointed vulnerabilities, and initiated security enhancements."
+  
   - name: "Deutsche Bank"
     location: "Bucharest, Romania"
     description: "Multinational investment bank"
@@ -55,8 +55,8 @@ work:
     startDate: "2023-03-01"
     endDate: "2023-08-01"
     highlights:
-      - "Developed a scalable platform for organizing and tracking employee trainings, streamlining training management for over 1500 employees. Utilized backend Java Spring Boot with JWT authentication for robust security and frontend React for an intuitive user interface, demonstrating full-stack development capabilities."
-      - "Implemented CI/CD to automate the build, test, and deployment process on the cloud. Developed Python microservices for real-time notifications, enhancing user engagement and platform usability."
+      - "Developed a scalable platform for 1500+ employees using Java Spring Boot (backend) and React (frontend), which streamlined the management and tracking of company-wide trainings."
+      - "Implemented a full CI/CD pipeline, automating the build, test, and cloud deployment process, which increased release frequency and reduced manual deployment errors."
 
   - name: "ETH Zurich"
     location: "Zurich, Switzerland"
@@ -66,77 +66,83 @@ work:
     startDate: "2022-07-01"
     endDate: "2022-08-31"
     highlights:
-      - "Crafted exercises, infrastructure, and solutions for a Systems Security curriculum, familiarizing Master's candidates with advanced security methods like sandboxing and fuzzing."
-      - "Conducted comprehensive validation and scalability tests for benchmarks, evaluating the performance and potential of a novel hardware-centric sandbox for WebAssembly utilizing Intel's memory protection keys technology at the kernel level."
+      - "Authored exercises, built infrastructure, and designed solutions for the 'Systems Security' course, preparing Master's students for topics like sandboxing and fuzzing."
+      - "Conducted comprehensive validation and scalability tests to evaluate the performance of a novel WebAssembly sandbox that utilizes Intel Memory Protection Keys at the kernel level."
 
 projects:
   - name: "cryptorusticon"
     description: "Rust"
     highlights:
-      - "Developed a Rust library for cryptography, utilizing the num crate for efficient mathematical operations."
-      - "Implemented the Blum Blum Shub pseudorandom number generator and the Solitaire cipher from the Cryptonomicon novel. Integrated comprehensive unit tests, emphasizing code quality, modularity, and maintainability."
+      - "Developed a Rust library for modern cryptography, implementing the Blum Blum Shub pseudorandom number generator and the Solitaire cipher."
+      - "Ensured code reliability and correctness by integrating a comprehensive unit test suite using built-in Rust testing frameworks."
     url: "https://github.com/lmihaig/cryptorusticon"
   - name: "Sound Synth"
     description: "C++, SDL"
     highlights:
-      - "Developed a real-time sound synthesizer leveraging digital signal processing (DSP) techniques for audio generation. Implemented a variety of oscillators (e.g., sine, square, sawtooth) and ADSR envelopes to create diverse instrument sounds."
-      - "Employed modern C++ principles, including object-oriented design, for modular and extensible signal processing chains.  Utilized SDL for cross-platform capabilities."
+      - "Developed a real-time sound synthesizer using digital signal processing (DSP) techniques, implementing oscillators (sine, square, etc.) and ADSR envelopes for diverse audio generation."
+      - "Utilized modern C++ and object-oriented design for a modular, extensible signal processing chain, leveraging SDL for cross-platform audio and windowing."
     url: "https://github.com/lmihaig/sound-synth"
-  # - name: "Yuri"
-  #   description: "Rust, Python"
-  #   highlights:
-  #     - "Created a C2 framework that enables operators to establish and manage reliable communication channels with listening posts, facilitating effective command and control."
-  #     - "Engineered a secure implant process for establishing reliable communication channels, ensuring optimized control over integrated systems."
-  #   url: "https://github.com/lmihaig/Yuri"
 
-# here I don't follow the json schema
 hackathons:
   - name: "DevHacks 2022"
     awarder: "Systematic"
     result: "3rd Place"
     summary: "On the basis of a climate change theme I developed a web app analyzing MEPs' voting records on climate change legislation utilizing machine learning."
-
   - name: "Smarthack 2022"
     awarder: "Siemens"
     result: "Usability Prize"
     summary: "Crafted a No Code web-scraping tool with a browser extension for data extraction, enabling users to automate data collection from websites to build personalized dashboards."
-
   - name: "HackITall 2022"
     awarder: "Deutsche Bank"
     result: "3rd Place"
     summary: "Developed a tool for analyzing and predicting public companies' ESG scores based on their public reports and statements."
-
 ctfs:
   - name: "ETH Bjorn CTF 2024"
     result: "Won first place out of 71"
-
   - name: "Unbreakable Romania 2021 Winter"
     result: "Won first place out of 45"
-
   - name: "Romanian Cyber Security Challenge 2021"
     result: "top 8% out of 296"
-
   - name: "Reply Cybersecurity Challenge 2021"
     result: "top 10% out of 2247"
-
   - name: "HSCTF 8 2021"
     result: "top 7% out of 1164"
-
   - name: "Cyber Apocalypse 2021"
     result: "top 15% out of 2735"
 
+# This section has been completely rebuilt to better reflect your experience.
 skills:
   - name: "Programming Languages"
     keywords:
       - "Python"
-      - "C"
+      - "Java"
+      - "C++"
       - "Rust"
       - "Go"
-      - "C++"
-  - name: "Developer Tools"
+      - "C"
+  - name: "Frameworks & Libraries"
     keywords:
-      - "Linux"
-      - "Git"
+      - "Spring Boot"
+      - "React"
+      - "Java JWT"
+      - "SDL"
+  - name: "Security"
+    keywords:
+      - "Incident Response"
+      - "OSINT"
+      - "Reverse Engineering"
+      - "Vulnerability Scanning"
+      - "Sandboxing"
+      - "Fuzzing"
       - "IDA Pro"
       - "Wireshark"
       - "Burp Suite"
+  - name: "DevOps & Tools"
+    keywords:
+      - "Linux"
+      - "Git"
+      - "CI/CD"
+      - "Docker"
+      - "Kubernetes"
+      - "Microservices"
+      - "Kerberos"

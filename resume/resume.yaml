@@ -44,8 +44,8 @@ work:
     startDate: "2023-06-29"
     endDate: "2023-09-02"
     highlights:
-      - "Played a key role in the incident response to a significant hacking event, using OSINT and reverse engineering to analyze attack strategies and breach magnitude."
       - "Engineered a Python tool with Kerberos SSO to automate security scans across 1000+ CERN sites. Systematically inventoried web technologies, pinpointed vulnerabilities, and initiated security enhancements."
+      - "Played a key role in the incident response to a significant hacking event, using OSINT and reverse engineering to analyze attack strategies and breach magnitude."
   
   - name: "Deutsche Bank"
     location: "Bucharest, Romania"
@@ -66,8 +66,8 @@ work:
     startDate: "2022-07-01"
     endDate: "2022-08-31"
     highlights:
-      - "Authored exercises, built infrastructure, and designed solutions for the 'Systems Security' course, preparing Master's students for topics like sandboxing and fuzzing."
       - "Conducted comprehensive validation and scalability tests to evaluate the performance of a novel WebAssembly sandbox that utilizes Intel Memory Protection Keys at the kernel level."
+      - "Authored exercises, built infrastructure, and designed solutions for the 'Systems Security' course, preparing Master's students for topics like sandboxing and fuzzing."
 
 projects:
   - name: "cryptorusticon"
@@ -110,39 +110,18 @@ ctfs:
   - name: "Cyber Apocalypse 2021"
     result: "top 15% out of 2735"
 
-# This section has been completely rebuilt to better reflect your experience.
 skills:
   - name: "Programming Languages"
     keywords:
       - "Python"
-      - "Java"
-      - "C++"
+      - "C"
       - "Rust"
       - "Go"
-      - "C"
-  - name: "Frameworks & Libraries"
-    keywords:
-      - "Spring Boot"
-      - "React"
-      - "Java JWT"
-      - "SDL"
-  - name: "Security"
-    keywords:
-      - "Incident Response"
-      - "OSINT"
-      - "Reverse Engineering"
-      - "Vulnerability Scanning"
-      - "Sandboxing"
-      - "Fuzzing"
-      - "IDA Pro"
-      - "Wireshark"
-      - "Burp Suite"
-  - name: "DevOps & Tools"
+      - "C++"
+  - name: "Developer Tools"
     keywords:
       - "Linux"
       - "Git"
-      - "CI/CD"
-      - "Docker"
-      - "Kubernetes"
-      - "Microservices"
-      - "Kerberos"
+      - "IDA Pro"
+      - "Wireshark"
+      - "Burp Suite"

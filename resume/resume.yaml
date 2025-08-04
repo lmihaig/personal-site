@@ -40,13 +40,13 @@ work:
     location: "Geneva, Switzerland"
     description: "European Organization for Nuclear Research"
     website: "https://home.cern/"
-    position: "Openlab Summer Intern"
+    position: "Security Engineering Intern"
     startDate: "2023-06-29"
     endDate: "2023-09-02"
     highlights:
       - "Engineered a Python tool with Kerberos SSO to automate security scans across 1000+ CERN sites. Systematically inventoried web technologies, pinpointed vulnerabilities, and initiated security enhancements."
       - "Played a key role in the incident response to a significant hacking event, using OSINT and reverse engineering to analyze attack strategies and breach magnitude."
-  
+
   - name: "Deutsche Bank"
     location: "Bucharest, Romania"
     description: "Multinational investment bank"
@@ -62,7 +62,7 @@ work:
     location: "Zurich, Switzerland"
     description: "Swiss Federal Institute of Technology"
     website: "https://ethz.ch/en.html"
-    position: "Summer Research Fellow"
+    position: "Research Assistant"
     startDate: "2022-07-01"
     endDate: "2022-08-31"
     highlights:

@@ -1,4 +1,4 @@
-#import "@preview/fontawesome:0.5.0": *
+#import "@preview/fontawesome:0.6.0": *
 
 // #let accent = rgb("#0000ff")
 // #FA_SET.update("Brands")
@@ -11,11 +11,11 @@
 
   set page(
     paper: "a4",
-    margin: (x: 1.2cm, y: 1.2cm)
+    margin: (x: 1cm, y: 1cm)
   )
 
   set text(
-    size: 11.5pt,
+    size: 11pt,
       font: "Liberation Sans",
   )
   body
@@ -55,15 +55,14 @@
   }
 
   grid(
-    columns: (1fr, 4fr),
+    columns: (0.9fr, 5.5fr),
     rows: (auto, auto),
     column-gutter: auto,
     bold_upper(title),
-    block[#v(2pt)#container],
+    block[#container],
   )
 
   if show_line {
-    v(5pt)
     line(length: 100%)
   }
 }
@@ -83,14 +82,13 @@
 }
 
 #let education(d) = {
-
   make_section("Education", d,
   item => {
     let start = strpdate(item.startDate)
     let end = strpdate(item.endDate)
     block[
-      *#item.institution* #h(1fr) #item.location \
-      #item.studyType #item.area #h(1fr) #start #sym.dash.en #end \
+      #link(item.url)[*#item.institution*] #h(1fr) #item.location \
+      #item.studyType #item.area #h(1fr) #start - #end \
     ]
   }
   )
@@ -98,28 +96,28 @@
 }
 
 #let experience(d) = {
-
   make_section("Work Experience", d, item => {
     let start = strpdate(item.startDate)
     let end = strpdate(item.endDate)
     
     block[
-      #link(item.website)[*#item.name*] | #item.position #h(1fr) #item.location \ 
-      #item.description #h(1fr) #start #sym.dash.en #end \
+      #link(item.website)[*#item.name*] #h(1fr) #item.location \ 
+      #item.position #h(1fr) #start - #end \
       #for bullet in item.highlights {
-        [- #bullet]
+        [- #eval(bullet, mode: "markup")]
       }
     ]
-  }
+  },
   )
 }
 
 #let projects(d) = {
-  make_section("Projects", d, item=>{
+  make_section("Personal Projects", d, item=>{
     block[
       #link(item.url)[*#item.name*] | #item.description
       #for desc in item.highlights{
-      [ - #desc]
+        [- #eval(desc, mode: "markup")]
+
       }
     ]
   })

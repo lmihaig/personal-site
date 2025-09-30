@@ -1,0 +1,141 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json
+# not following the schema completely because of the awards section and the profiles section which I just turned into linkedin and github
+
+[meta]
+theme = "elegant"
+
+[basics]
+name = "Mihai-George Licu"
+url = "https://licu.dev"
+email = "mihai.licu@protonmail.com"
+phone = "+40729572719"
+
+[basics.location]
+city = "Zurich"
+countryCode = "CH"
+
+[basics.linkedin]
+username = "licu-mihai"
+url = "https://www.linkedin.com/in/licu-mihai"
+
+[basics.github]
+username = "lmihaig"
+url = "https://github.com/lmihaig"
+
+[[education]]
+institution = "ETH Zurich"
+url = "https://ethz.ch/en.html"
+studyType = "MSc in"
+area = "Computer Science"
+startDate = "2024-09-16"
+endDate = "Present"
+location = "Zurich, Switzerland"
+
+# [[education]]
+# institution = "EPF Lausanne"
+# url = "https://www.epfl.ch/en/"
+# studyType = "MSc in"
+# area = "Computer Science, Exchange Semester"
+# startDate = "2025-02-16"
+# endDate = "2025-06-30"
+# location = "Lausanne, Switzerland"
+
+
+[[education]]
+institution = "University of Bucharest"
+url = "https://fmi.unibuc.ro/"
+studyType = "B.Eng. in"
+area = "Computer Science"
+startDate = "2020-09-01"
+endDate = "2024-07-01"
+location = "Bucharest, Romania"
+
+
+[[work]]
+name = "ETH Zurich"
+location = "Zurich, Switzerland"
+description = "Swiss Federal Institute of Technology"
+website = "https://ethz.ch/en.html"
+position = "Research Assistant"
+startDate = "2025-08-01"
+endDate = "Present"
+highlights = [
+  "Extended a *Python/Java* pipeline that generates synthetic populations to run *agent-based* transport simulations, adapting its modules to process new geographical data.",
+  "Automated the generation of geospatial visualizations from simulation data, providing key metrics for urban planning analysis using *geopandas*.",
+]
+
+
+[[work]]
+name = "CERN"
+location = "Geneva, Switzerland"
+description = "European Organization for Nuclear Research"
+website = "https://home.cern/"
+position = "Security Engineering Intern"
+startDate = "2023-06-29"
+endDate = "2023-09-02"
+highlights = [
+  "Overhauled a critical security scanner by migrating the legacy Python 2 codebase to *Python 3*, enabling automated technology detection across thousands of previously unscannable, *Kerberos SSO*-protected web applications.",
+  "Contributed to a live incident response effort by performing forensic analysis on attacker-provided artifacts (source code, logs) to assist in post-breach investigation.",
+  "Authored a detailed technical report on the viability of a unified *YubiKey* authentication system, analyzing *FIDO2* protocol limitations and OS-level integration challenges for *SSH* across the complete Linux, macOS, and Windows ecosystem.",
+]
+
+[[work]]
+name = "Deutsche Bank"
+location = "Bucharest, Romania"
+description = "Multinational investment bank"
+website = "https://www.deutsche-bank.de/"
+position = "Software Engineer Intern"
+startDate = "2023-03-01"
+endDate = "2023-08-01"
+highlights = [
+  "Accelerated development for a new internal training platform built with *Java Spring Boot* and *React* serving 1500+ employees by architecting a complete *CI/CD* pipeline on Google Cloud Platform that automated all builds, testing, and deployments.",
+  "Improved user retention and engagement for the platform by engineering its primary notification microservice with *Google Cloud Functions*, delivering event-driven communications.",
+]
+
+[[work]]
+name = "ETH Zurich"
+location = "Zurich, Switzerland"
+description = "Swiss Federal Institute of Technology"
+website = "https://ethz.ch/en.html"
+position = "Research Assistant"
+startDate = "2022-07-01"
+endDate = "2022-08-31"
+highlights = [
+  "Developed and used *Docker* to containerize a full curriculum of hands-on lab exercises for a graduate-level Systems Security course, used by 200+ students to gain practical experience with memory corruption exploits, static/dynamic analysis, and sandboxing.",
+  "Executed a series of targeted benchmarks against a novel *WebAssembly* sandbox that leverages Intel Memory Protection Keys to analyze its performance and stability.",
+]
+
+[[projects]]
+name = "fabridyne"
+description = "Rust"
+url = "https://github.com/lmihaig/fabridyne"
+highlights = [
+  "Developed a cycle-accurate, out-of-order superscalar processor simulator in *Rust*, capable of executing a subset of the *RISC-V* instruction set.",
+  "Modeled a complete microarchitecture, including a 32-entry reservation station, register renaming, and precise exception handling to manage data hazards and ensure correct state.",
+]
+
+[[projects]]
+name = "Sound Synth"
+description = "C++"
+url = "https://github.com/lmihaig/sound-synth"
+highlights = [
+  "Architected a real-time, polyphonic audio synthesizer leveraging the *SDL2* library for low-latency, cross-platform audio processing and event handling. The synthesis engine features multiple waveform oscillators, dynamic ADSR amplitude envelopes, and a collection of distinct virtual instruments.",
+  "Implemented thread-safe audio generation by synchronizing the main event loop and the audio callback thread.",
+]
+
+[[skills]]
+name = "Programming Languages"
+keywords = ["Python", "C++", "Rust", "Java", "C", "Go", "JavaScript"]
+
+[[skills]]
+name = "Developer Tools"
+keywords = [
+  "Docker",
+  "Linux",
+  "GCP",
+  "Git",
+  "Kubernetes",
+  "IDA Pro",
+  "Wireshark",
+  "Burp Suite",
+]

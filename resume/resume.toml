@@ -44,7 +44,7 @@ location = "Zurich, Switzerland"
 [[education]]
 institution = "University of Bucharest"
 url = "https://fmi.unibuc.ro/"
-studyType = "B.Eng. in"
+studyType = "BEng in"
 area = "Computer Science"
 startDate = "2020-09-01"
 endDate = "2024-07-01"
@@ -70,11 +70,11 @@ name = "CERN"
 location = "Geneva, Switzerland"
 description = "European Organization for Nuclear Research"
 website = "https://home.cern/"
-position = "Security Engineering Intern"
+position = "Security Engineer Intern"
 startDate = "2023-06-29"
 endDate = "2023-09-02"
 highlights = [
-  "Overhauled a critical security scanner by migrating the legacy Python 2 codebase to *Python 3*, enabling automated technology detection across thousands of previously unscannable, *Kerberos SSO*-protected web applications.",
+  "Overhauled a critical security scanner by migrating its codebase from *Python 2* to *Python 3* and integrating *Kerberos SSO* authentication, enabling automated detection across 1000+ previously unscannable web applications.",
   "Contributed to a live incident response effort by performing forensic analysis on attacker-provided artifacts (source code, logs) to assist in post-breach investigation.",
   "Authored a detailed technical report on the viability of a unified *YubiKey* authentication system, analyzing *FIDO2* protocol limitations and OS-level integration challenges for *SSH* across the complete Linux, macOS, and Windows ecosystem.",
 ]
@@ -101,8 +101,8 @@ position = "Research Assistant"
 startDate = "2022-07-01"
 endDate = "2022-08-31"
 highlights = [
-  "Developed and used *Docker* to containerize a full curriculum of hands-on lab exercises for a graduate-level Systems Security course, used by 200+ students to gain practical experience with memory corruption exploits, static/dynamic analysis, and sandboxing.",
-  "Executed a series of targeted benchmarks against a novel *WebAssembly* sandbox that leverages Intel Memory Protection Keys to analyze its performance and stability.",
+  "Engineered a portable, *Docker*-based lab environment for a graduate-level Systems Security course, providing 200+ students with a consistent platform for hands-on exercises in memory corruption, static/dynamic analysis, and sandboxing.",
+  "Wrote a series of targeted benchmarks against a novel *WebAssembly* sandbox that leverages Intel Memory Protection Keys to analyze its performance and stability.",
 ]
 
 [[projects]]
@@ -119,8 +119,7 @@ name = "Sound Synth"
 description = "C++"
 url = "https://github.com/lmihaig/sound-synth"
 highlights = [
-  "Architected a real-time, polyphonic audio synthesizer leveraging the *SDL2* library for low-latency, cross-platform audio processing and event handling. The synthesis engine features multiple waveform oscillators, dynamic ADSR amplitude envelopes, and a collection of distinct virtual instruments.",
-  "Implemented thread-safe audio generation by synchronizing the main event loop and the audio callback thread.",
+  "Built a real-time, polyphonic audio synthesizer leveraging the *SDL2* library for low-latency, cross-platform audio processing and event handling. The synthesis engine features multiple waveform oscillators, dynamic ADSR amplitude envelopes, and a collection of distinct virtual instruments.",
 ]
 
 [[skills]]
